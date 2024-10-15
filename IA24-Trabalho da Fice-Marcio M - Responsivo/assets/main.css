@@ -1,0 +1,177 @@
+body {
+
+  margin: 0;
+  padding: 0;
+  background-position: center 20px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  height: 400vh;
+
+}
+
+body,
+
+header,
+main,
+footer {
+
+  width: 85vw;
+  margin: 0 auto;
+  margin-bottom: .5vw;
+
+}
+
+html {
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
+}
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+
+header {
+
+  position: relative;
+
+}
+
+header::after {
+
+  content: " ";
+  position: absolute;
+  background-color: #40d307;
+  right: 0;
+  top: 10vw;
+  width: 100%;
+  height: 3.5vw;
+  clip-path: polygon(0 0, 100% 20%, 100% 100%);
+
+}
+
+header::before {
+
+  content: " ";
+  position: absolute;
+  background-color: #103f00;
+  right: 0;
+  top: 11vw;
+  width: 90%;
+  height: 4.5vw;
+  clip-path: polygon(0 0, 100% 65%, 100% 100%);
+
+}
+
+header .Cab {
+
+  display: flex;
+  justify-content: space-around;
+  padding: 2vh 5vw;
+  height: 11vw;
+
+}
+
+header h1 {
+
+  text-align: center;
+  margin-top: 6.3vw;
+  font-size: 160%;
+  padding: 0 5vw;
+
+}
+
+header h1 span:first-of-type {
+
+  text-transform: uppercase;
+
+}
+
+header h1 span:first-of-type:has(~ span)::after {
+  content: ":";
+}
+
+header p {
+  text-align: center;
+  margin: 0;
+}
+
+main {
+
+  padding: 2vw;
+  columns: 2;
+  column-gap: 1.5vw;
+
+}
+
+main .img {
+
+  display: flex;
+  padding: 2vh 0vw;
+  height: 20vw;
+  width: 20vw;
+}
+
+footer {
+
+  position: relative;
+  border: 10px;
+  height: 12vw;
+
+}
+
+footer::after {
+
+  content: " ";
+  position: absolute;
+  background-color: #103f00;
+  left: 0;
+  top: 11vw;
+  width: 90%;
+  height: 4.5vw;
+  clip-path: polygon(0 65%, 0 100%, 100% 100%);
+
+}
+
+footer::before {
+
+  content: " ";
+  position: absolute;
+  background-color: #40d307;
+  left: 0;
+  top: 10vw;
+  width: 100%;
+  height: 3.5vw;
+  clip-path: polygon(0 20%, 0 100%, 100% 100%);
+
+}
+
+.responsive {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+
+  main {
+
+    columns: 1;
+
+  }
+
+}
+
+@media screen and (after-max-width: 500px){
+  
+main{
+
+columns:3;
+
+}
+
+}
