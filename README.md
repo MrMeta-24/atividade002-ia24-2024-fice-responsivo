@@ -1,0 +1,1 @@
+# atividade002-ia24-2024-fice-responsivo
