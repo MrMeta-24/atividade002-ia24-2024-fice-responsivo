@@ -113,8 +113,9 @@ main .img {
 
   display: flex;
   padding: 2vh 0vw;
-  height: 20vw;
-  width: 20vw;
+  height: 12vw;
+  width: 12vw;
+
 }
 
 footer {
@@ -166,12 +167,12 @@ footer::before {
 
 }
 
-@media screen and (after-max-width: 500px){
-  
-main{
+@media screen and (min-width: 900px) {
 
-columns:3;
+  main {
 
-}
+    columns: 3;
+
+  }
 
 }
